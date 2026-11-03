@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #f7f4ee;
-  --color-paper-deep: #efe9df;
-  --color-ink: #1a1714;
-  --color-ink-soft: #4a443d;
-  --color-rule: #d9d1c4;
-  /* Accent tuned for AA contrast: 4.9:1 on paper, 5.2:1 with white text. */
-  --color-accent: #c2410c;
-  --color-accent-dark: #9a3412;
+  /* Dark theme: "paper" is the black background, "ink" is the white text. */
+  --color-paper: #000000;
+  --color-paper-deep: #141414;
+  --color-ink: #ffffff;
+  --color-ink-soft: #c4c4c4;
+  --color-rule: #333333;
+  /* Bright orange for AA contrast on black; buttons use black text on it. */
+  --color-accent: #f97316;
+  --color-accent-dark: #fb923c;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
@@ -16,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -44,5 +46,5 @@ footer[id] {
 
 ::selection {
   background: var(--color-accent);
-  color: #fff;
+  color: #000;
 }

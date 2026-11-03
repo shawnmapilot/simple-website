@@ -14,11 +14,11 @@ export default function Hero() {
           <div className="lg:col-span-8">
             <h1
               id="hero-title"
-              className="font-serif text-5xl leading-[0.95] tracking-tight sm:text-7xl lg:text-[7.5rem]"
+              className="font-serif text-5xl leading-[0.95] tracking-tight sm:text-7xl lg:text-[6.5rem]"
             >
-              Small businesses,
+              Web Design and
               <br />
-              <em className="font-normal text-accent">told well.</em>
+              <em className="font-normal text-accent">SEO Agency</em>
             </h1>
           </div>
 
