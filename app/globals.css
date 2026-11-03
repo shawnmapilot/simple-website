@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f7f4ee;
+  --color-paper-deep: #efe9df;
+  --color-ink: #1a1714;
+  --color-ink-soft: #4a443d;
+  --color-rule: #d9d1c4;
+  /* Accent tuned for AA contrast: 4.9:1 on paper, 5.2:1 with white text. */
+  --color-accent: #c2410c;
+  --color-accent-dark: #9a3412;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+/* Keep anchored sections clear of the sticky header. */
+section[id],
+footer[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* One visible focus ring for every interactive element. */
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
