@@ -15,9 +15,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "North Studio — Branding, web design & content",
+  title: "North Studio — Web Design and SEO Agency",
   description:
-    "North Studio is a small creative agency helping small businesses with branding, web design, and content.",
+    "North Studio is a web design and SEO agency helping small businesses with branding, websites, and content.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
